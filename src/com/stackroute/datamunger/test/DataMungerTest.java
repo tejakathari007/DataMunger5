@@ -6,6 +6,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -530,7 +531,7 @@ public class DataMungerTest {
 	 */
 
 	@Test
-	public void testSelectAllWithoutWhereClause() throws FileNotFoundException {
+	public void testSelectAllWithoutWhereClause() throws IOException {
 		int totalrecordsexpected = 577;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -580,7 +581,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testSelectColumnsWithoutWhereClause() throws FileNotFoundException {
+	public void testSelectColumnsWithoutWhereClause() throws IOException {
 		int totalrecordsexpected = 577;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -628,7 +629,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereGreaterThanClause() throws FileNotFoundException {
+	public void testWithWhereGreaterThanClause() throws IOException {
 		int totalrecordsexpected = 60;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -679,7 +680,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereLessThanClause() throws FileNotFoundException {
+	public void testWithWhereLessThanClause() throws IOException {
 		int totalrecordsexpected = 458;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -729,7 +730,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereLessThanOrEqualToClause() throws FileNotFoundException {
+	public void testWithWhereLessThanOrEqualToClause() throws IOException {
 		int totalrecordsexpected = 517;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -779,7 +780,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereGreaterThanOrEqualToClause() throws FileNotFoundException {
+	public void testWithWhereGreaterThanOrEqualToClause() throws IOException {
 		int totalrecordsexpected = 119;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -829,7 +830,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereNotEqualToClause() throws FileNotFoundException {
+	public void testWithWhereNotEqualToClause() throws IOException {
 
 		int totalrecordsexpected = 315;
 		int recordscounter = 1;
@@ -881,7 +882,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereEqualAndNotEqualClause() throws FileNotFoundException {
+	public void testWithWhereEqualAndNotEqualClause() throws IOException {
 		int totalrecordsexpected = 195;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -931,7 +932,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereTwoConditionsEqualOrNotEqualClause() throws FileNotFoundException {
+	public void testWithWhereTwoConditionsEqualOrNotEqualClause() throws IOException {
 		int totalrecordsexpected = 155;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
@@ -982,7 +983,7 @@ public class DataMungerTest {
 	}
 
 	@Test
-	public void testWithWhereThreeConditionsEqualOrNotEqualClause() throws FileNotFoundException {
+	public void testWithWhereThreeConditionsEqualOrNotEqualClause() throws IOException {
 		int totalrecordsexpected = 577;
 		int recordscounter = 1;
 		boolean dataexpectedstatus = false;
